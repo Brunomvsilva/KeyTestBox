@@ -1,0 +1,9 @@
+Manufacturer=STMicroelectronics
+PartNumber=ESDALC6V1-1U2
+PartCategory=TVS Diode (Uni-directional)
+PackageCategory=Other
+PinCount=2
+Version=1.2
+Released=2018-06-05 08:45:18
+Downloaded=2023-09-06 12:02:27
+3D=Y

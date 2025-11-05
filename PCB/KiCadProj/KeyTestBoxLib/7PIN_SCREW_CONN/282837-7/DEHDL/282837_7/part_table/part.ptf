@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '282837_7'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "TE Connectivity", "282837-7" (!) = "", "SHDR7W100P0X508_1X7_3556X820X1000P", "Header, Shrouded - Straight PTH Box", "571-2828377", "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/282837-7?qs=A%252Bip%252BNCYi6OpGcunckL3uQ%3D%3D", "Fixed Terminal Blocks 5.08MM PCB MOUNT 7P", "https://componentsearchengine.com/Datasheets/1/282837-7.pdf", "10 mm"
+END_PART
+
+END.

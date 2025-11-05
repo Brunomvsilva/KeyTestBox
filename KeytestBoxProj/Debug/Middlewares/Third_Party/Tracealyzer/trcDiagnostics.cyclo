@@ -1,0 +1,9 @@
+trcDiagnostics.c:19:13:xTraceDiagnosticsInitialize	2
+trcDiagnostics.c:38:13:xTraceDiagnosticsGet	1
+trcDiagnostics.c:54:13:xTraceDiagnosticsSet	1
+trcDiagnostics.c:67:13:xTraceDiagnosticsAdd	1
+trcDiagnostics.c:80:13:xTraceDiagnosticsIncrease	1
+trcDiagnostics.c:85:13:xTraceDiagnosticsDecrease	1
+trcDiagnostics.c:90:13:xTraceDiagnosticsSetIfHigher	2
+trcDiagnostics.c:106:13:xTraceDiagnosticsSetIfLower	2
+trcDiagnostics.c:122:13:xTraceDiagnosticsCheckStatus	6

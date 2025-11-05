@@ -1,0 +1,9 @@
+freertos.c:120:6:vApplicationGetIdleTaskMemory	1
+freertos.c:134:6:MX_FREERTOS_Init	1
+freertos.c:182:6:StartDefaultTask	1
+freertos.c:200:6:KeytestTask	19
+freertos.c:422:6:MqttTaskFunction	14
+freertos.c:568:6:HAL_CAN_RxFifo0MsgPendingCallback	8
+freertos.c:604:6:HAL_CAN_RxFifo1MsgPendingCallback	8
+freertos.c:638:6:HAL_UART_RxCpltCallback	13
+freertos.c:722:6:ProcessSmacMessage	13

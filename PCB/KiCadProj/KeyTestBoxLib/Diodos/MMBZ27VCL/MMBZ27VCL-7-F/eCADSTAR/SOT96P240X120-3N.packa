@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "MMBZ27VCL-7-F"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2023-02-01-05:42:51)
+    (mountForm default
+        (footprintRef "SOT96P240X120-3N")
+        (spec "System")
+    )
+)

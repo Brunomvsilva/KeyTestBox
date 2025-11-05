@@ -1,0 +1,18 @@
+.MMBZ27VCL-7-F :1 ;ESD Suppressors / TVS Diodes 225MW 22V
+SOT96P240X120-3N
+*STM IC
+*NGS
+*PLB 1="A_1" 2="A_2" 3="K"
+*MXP 3
+*DFN MMBZ27VCL-7-F
+~!Manufacturer_Name (Diodes Inc.)
+~!Manufacturer_Part_Number (MMBZ27VCL-7-F)
+~!Mouser Part Number (621-MMBZ27VCL-7-F)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/MMBZ27VCL-7-F?qs=zpnZCIghiEx6bIJf9W4zmw%3D%3D)
+~!Arrow Part Number (MMBZ27VCL-7-F)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/mmbz27vcl-7-f/diodes-incorporated?region=nac)
+~!Link Datasheet (https://www.diodes.com/assets/Datasheets/MMBZ27VCL.pdf)
+~!Height (1.2mm)
+~!3D_Model (MMBZ27VCL-7-F)
+MMBZ27VCL-7-F
+1.1!U 2.1!U 3.1!U 

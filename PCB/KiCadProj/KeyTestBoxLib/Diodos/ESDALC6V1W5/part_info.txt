@@ -1,0 +1,9 @@
+Manufacturer=STMicroelectronics
+PartNumber=ESDALC6V1W5
+PartCategory=Integrated Circuit
+PackageCategory=SOT23 (5-Pin)
+PinCount=5
+Version=3.1
+Released=2015-06-16 02:30:58
+Downloaded=2023-09-06 14:45:05
+3D=Y

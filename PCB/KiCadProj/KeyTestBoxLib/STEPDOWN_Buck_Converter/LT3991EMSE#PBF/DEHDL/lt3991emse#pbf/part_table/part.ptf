@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'LT3991EMSE#PBF'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Analog Devices", "LT3991EMSE#PBF" (!) = "", "SOP50P490X110-11N", "Small Outline Packages", "584-LT3991EMSE#PBF", "https://www.mouser.co.uk/ProductDetail/Analog-Devices-Linear-Technology/LT3991EMSEPBF?qs=hVkxg5c3xu%2FPU%252Bq5oSghVA%3D%3D", "LT3991EMSE#PBF", "https://www.arrow.com/en/products/lt3991emsepbf/analog-devices", "LINEAR TECHNOLOGY - LT3991EMSE#PBF - DC-DC Switching Buck (Step Down) Regulator, Adjustable, 4.3V-55Vin, 1.19V-30Vout, 1.2Aout, MSOP-10", "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-SFU4/DSASF4000-3355.pdf", "1.1 mm"
+END_PART
+
+END.

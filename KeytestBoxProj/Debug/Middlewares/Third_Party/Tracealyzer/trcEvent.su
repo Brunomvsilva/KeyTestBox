@@ -1,0 +1,13 @@
+../Middlewares/Third_Party/Tracealyzer/trcEvent.c:27:13:xTraceEventInitialize	32	static
+../Middlewares/Third_Party/Tracealyzer/trcEvent.c:54:13:xTraceEventCreate0	40	static,ignoring_inline_asm
+../Middlewares/Third_Party/Tracealyzer/trcEvent.c:89:13:xTraceEventCreate1	40	static,ignoring_inline_asm
+../Middlewares/Third_Party/Tracealyzer/trcEvent.c:127:13:xTraceEventCreate2	48	static,ignoring_inline_asm
+../Middlewares/Third_Party/Tracealyzer/trcEvent.c:166:13:xTraceEventCreate3	48	static,ignoring_inline_asm
+../Middlewares/Third_Party/Tracealyzer/trcEvent.c:206:13:xTraceEventCreate4	48	static,ignoring_inline_asm
+../Middlewares/Third_Party/Tracealyzer/trcEvent.c:247:13:xTraceEventCreate5	48	static,ignoring_inline_asm
+../Middlewares/Third_Party/Tracealyzer/trcEvent.c:289:13:xTraceEventCreate6	48	static,ignoring_inline_asm
+../Middlewares/Third_Party/Tracealyzer/trcEvent.c:332:13:xTraceEventBeginRawOffline	40	static,ignoring_inline_asm
+../Middlewares/Third_Party/Tracealyzer/trcEvent.c:384:13:xTraceEventBeginRawOfflineBlocking	48	static,ignoring_inline_asm
+../Middlewares/Third_Party/Tracealyzer/trcEvent.c:436:13:xTraceEventEndOffline	40	static,ignoring_inline_asm
+../Middlewares/Third_Party/Tracealyzer/trcEvent.c:471:13:xTraceEventEndOfflineBlocking	48	static,ignoring_inline_asm
+../Middlewares/Third_Party/Tracealyzer/trcEvent.c:512:13:xTraceEventAddData	32	static

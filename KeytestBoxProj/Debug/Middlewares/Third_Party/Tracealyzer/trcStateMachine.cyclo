@@ -1,0 +1,3 @@
+trcStateMachine.c:21:13:xTraceStateMachineCreate	2
+trcStateMachine.c:43:13:xTraceStateMachineStateCreate	2
+trcStateMachine.c:67:13:xTraceStateMachineSetState	1

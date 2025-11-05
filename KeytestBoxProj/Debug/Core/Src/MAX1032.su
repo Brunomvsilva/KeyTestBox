@@ -1,0 +1,3 @@
+../Core/Src/MAX1032.c:10:9:MAX1032_Init	32	static
+../Core/Src/MAX1032.c:55:7:ReadADC_Polling	56	static
+../Core/Src/MAX1032.c:91:6:ReadADCISR_Request	16	static

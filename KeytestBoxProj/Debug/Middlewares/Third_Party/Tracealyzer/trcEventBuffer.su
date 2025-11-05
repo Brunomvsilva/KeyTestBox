@@ -1,0 +1,9 @@
+../Middlewares/Third_Party/Tracealyzer/trcEventBuffer.c:17:13:xTraceEventBufferInitialize	24	static
+../Middlewares/Third_Party/Tracealyzer/trcEventBuffer.c:52:20:prvTraceEventBufferPop	24	static
+../Middlewares/Third_Party/Tracealyzer/trcEventBuffer.c:68:20:prvTraceEventBufferAllocPop	24	static
+../Middlewares/Third_Party/Tracealyzer/trcEventBuffer.c:93:13:xTraceEventBufferAlloc	40	static
+../Middlewares/Third_Party/Tracealyzer/trcEventBuffer.c:258:13:xTraceEventBufferAllocCommit	24	static
+../Middlewares/Third_Party/Tracealyzer/trcEventBuffer.c:274:13:xTraceEventBufferPush	72	static
+../Middlewares/Third_Party/Tracealyzer/trcEventBuffer.c:398:13:xTraceEventBufferTransferAll	40	static
+../Middlewares/Third_Party/Tracealyzer/trcEventBuffer.c:466:13:xTraceEventBufferTransferChunk	48	static
+../Middlewares/Third_Party/Tracealyzer/trcEventBuffer.c:534:13:xTraceEventBufferClear	16	static

@@ -1,0 +1,13 @@
+trcEvent.c:27:13:xTraceEventInitialize	3
+trcEvent.c:54:13:xTraceEventCreate0	4
+trcEvent.c:89:13:xTraceEventCreate1	4
+trcEvent.c:127:13:xTraceEventCreate2	4
+trcEvent.c:166:13:xTraceEventCreate3	4
+trcEvent.c:206:13:xTraceEventCreate4	4
+trcEvent.c:247:13:xTraceEventCreate5	4
+trcEvent.c:289:13:xTraceEventCreate6	4
+trcEvent.c:332:13:xTraceEventBeginRawOffline	3
+trcEvent.c:384:13:xTraceEventBeginRawOfflineBlocking	3
+trcEvent.c:436:13:xTraceEventEndOffline	1
+trcEvent.c:471:13:xTraceEventEndOfflineBlocking	2
+trcEvent.c:512:13:xTraceEventAddData	2

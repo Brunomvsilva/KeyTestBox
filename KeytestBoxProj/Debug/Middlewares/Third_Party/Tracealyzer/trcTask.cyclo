@@ -1,0 +1,5 @@
+trcTask.c:29:13:xTraceTaskInitialize	2
+trcTask.c:48:13:xTraceTaskUnregister	1
+trcTask.c:60:13:xTraceTaskSetPriority	1
+trcTask.c:75:13:xTraceTaskSetPriorityWithoutHandle	2
+trcTask.c:93:13:xTraceTaskSwitch	4

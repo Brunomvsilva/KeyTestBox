@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MMBZ27VCL-7-F
+D ESD Suppressors / TVS Diodes 225MW 22V
+K
+F https://www.diodes.com/assets/Datasheets/MMBZ27VCL.pdf
+$ENDCMP
+#
+#End Doc Library

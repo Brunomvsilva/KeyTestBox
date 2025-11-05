@@ -1,0 +1,72 @@
+(Japanese_coding: sjis)
+(function "ECS_257439"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2023-02-01-05:42:51)
+    (utime 2023-03-07-16:10:32)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+        (port "3" (symbPinId 3) (portType INOUT))
+    )
+    (property "symbolName" "MMBZ27VCL-7-F")
+)
+
+
+(pinAssign "ECS_257439"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2023-02-01-05:42:51)
+    (utime 2023-03-07-16:10:32)
+    (interface
+        (port "1" (symbPinId 1) (portName "A_1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "A_2") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "K") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_257439")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+                (port "3" (match "3"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "MMBZ27VCL-7-F")
+)
+
+
+(part "MMBZ27VCL-7-F"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2023-02-01-05:42:51)
+    (utime 2023-03-07-16:10:32)
+    (packageRef "MMBZ27VCL-7-F")
+    (pinAssignRef "ECS_257439")
+    (interface
+        (port "1" (symbPinId 1) (portName "A_1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "A_2") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "K") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "IC")
+    (property "description" "ESD Suppressors / TVS Diodes 225MW 22V")
+    (property "Manufacturer_Name" "Diodes Inc.")
+    (property "Manufacturer_Part_Number" "MMBZ27VCL-7-F")
+    (property "Mouser_Part_Number" "621-MMBZ27VCL-7-F")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/MMBZ27VCL-7-F?qs=zpnZCIghiEx6bIJf9W4zmw%3D%3D")
+    (property "Arrow_Part_Number" "MMBZ27VCL-7-F")
+    (property "Arrow_Price/Stock" "https://www.arrow.com/en/products/mmbz27vcl-7-f/diodes-incorporated?region=nac")
+    (property "Datasheet_Link" "https://www.diodes.com/assets/Datasheets/MMBZ27VCL.pdf")
+    (property "compAreaTopHeight" 1.2)
+)
+
+

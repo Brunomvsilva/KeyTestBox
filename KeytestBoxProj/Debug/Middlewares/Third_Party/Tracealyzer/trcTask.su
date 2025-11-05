@@ -1,0 +1,5 @@
+../Middlewares/Third_Party/Tracealyzer/trcTask.c:29:13:xTraceTaskInitialize	24	static
+../Middlewares/Third_Party/Tracealyzer/trcTask.c:48:13:xTraceTaskUnregister	24	static
+../Middlewares/Third_Party/Tracealyzer/trcTask.c:60:13:xTraceTaskSetPriority	24	static
+../Middlewares/Third_Party/Tracealyzer/trcTask.c:75:13:xTraceTaskSetPriorityWithoutHandle	24	static
+../Middlewares/Third_Party/Tracealyzer/trcTask.c:93:13:xTraceTaskSwitch	40	static,ignoring_inline_asm

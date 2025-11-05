@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'MMBZ27VCL_7_F'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Diodes Inc.", "MMBZ27VCL-7-F" (!) = "", "SOT96P240X120-3N", "SOT23 (3-Pin)", "621-MMBZ27VCL-7-F", "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/MMBZ27VCL-7-F?qs=zpnZCIghiEx6bIJf9W4zmw%3D%3D", "MMBZ27VCL-7-F", "https://www.arrow.com/en/products/mmbz27vcl-7-f/diodes-incorporated?region=nac", "ESD Suppressors / TVS Diodes 225MW 22V", "https://www.diodes.com/assets/Datasheets/MMBZ27VCL.pdf", "1.2 mm"
+END_PART
+
+END.

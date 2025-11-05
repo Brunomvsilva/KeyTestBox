@@ -1,0 +1,134 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "282837-7"
+   (description "Fixed Terminal Blocks 5.08MM PCB MOUNT 7P")
+   (family "CON")
+   (package "SHDR7W100P0X508_1X7_3556X820X1000P")
+   (attribute "Datasheet Link" "https://componentsearchengine.com/Datasheets/1/282837-7.pdf")
+   (attribute "Geometry.Height" "10mm")
+   (attribute "Mouser Part Number" "571-2828377")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/282837-7?qs=A%252Bip%252BNCYi6OpGcunckL3uQ%3D%3D")
+   (attribute "Manufacturer_Name" "TE Connectivity")
+   (attribute "Manufacturer_Part_Number" "282837-7")
+   (gate
+    (symbol "282837-7")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+    (pin "3" 3 PS)
+    (pin "4" 4 PS)
+    (pin "5" 5 PS)
+    (pin "6" 6 PS)
+    (pin "7" 7 PS)
+   )
+  )
+  (symbol "282837-7"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 600 100) (pt 600 -700) (pt 200 -700) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -400) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -500) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -600) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "SHDR7W100P0X508_1X7_3556X820X1000P"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -2.79 -4.55)
+      (pt -2.79 4.15)
+      (pt 33.27 4.15)
+      (pt 33.27 -4.55)
+      (pt -2.79 -4.55))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -2.54 -4.3)
+      (pt -2.54 3.9)
+      (pt 33.02 3.9)
+      (pt 33.02 -4.3)
+      (pt -2.54 -4.3))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 0 -4.3)
+      (pt 33.02 -4.3)
+      (pt 33.02 3.9)
+      (pt -2.54 3.9)
+      (pt -2.54 0))))
+   (leg 1 (pt 0 0) (padstack 1))
+   (leg 2 (pt 5.08 0) (padstack 0))
+   (leg 3 (pt 10.16 0) (padstack 0))
+   (leg 4 (pt 15.24 0) (padstack 0))
+   (leg 5 (pt 20.32 0) (padstack 0))
+   (leg 6 (pt 25.4 0) (padstack 0))
+   (leg 7 (pt 30.48 0) (padstack 0))
+   (padstack 0
+    (hole 1.2)
+    (plated true)
+    (pad (layer TCOP) (round 1.8))
+    (pad (layer INNER) (round 1.8))
+    (pad (layer BCOP) (round 1.8))
+   )
+   (padstack 1
+    (hole 1.2)
+    (plated true)
+    (pad (layer TCOP) (square 1.8))
+    (pad (layer INNER) (round 1.8))
+    (pad (layer BCOP) (square 1.8))
+   )
+   (model "282837-7.stp"
+    (euler 90 0 0)
+    (offset 15.1899995803833 -4.070000171661377 2.75)
+   )
+  )
+ )
+)

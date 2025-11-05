@@ -1,0 +1,10 @@
+trcObject.c:26:13:xTraceObjectRegisterInternal	16
+trcObject.c:105:13:xTraceObjectRegister	1
+trcObject.c:110:13:xTraceObjectUnregister	1
+trcObject.c:145:13:xTraceObjectSetName	4
+trcObject.c:176:13:xTraceObjectRegisterWithoutHandle	1
+trcObject.c:183:13:xTraceObjectUnregisterWithoutHandle	2
+trcObject.c:207:13:xTraceObjectSetNameWithoutHandle	4
+trcObject.c:234:13:xTraceObjectSetSpecificStateWithoutHandle	2
+trcObject.c:257:13:xTraceObjectSetOptionsWithoutHandle	4
+trcObject.c:285:13:prvTraceObjectSendNameEvent	9

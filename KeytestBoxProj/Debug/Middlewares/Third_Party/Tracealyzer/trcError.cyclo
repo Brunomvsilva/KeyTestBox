@@ -1,0 +1,7 @@
+trcError.c:26:13:xTraceErrorInitialize	1
+trcError.c:42:13:xTraceWarning	3
+trcError.c:62:13:xTraceError	4
+trcError.c:91:13:xTraceErrorGetLast	2
+trcError.c:105:13:xTraceErrorClear	2
+trcError.c:119:20:prvTraceErrorPrint	6
+trcError.c:185:20:prvTraceErrorGetDescription	16

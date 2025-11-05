@@ -1,0 +1,10 @@
+../Middlewares/Third_Party/Tracealyzer/trcEntryTable.c:37:13:xTraceEntryIndexTableInitialize	16	static
+../Middlewares/Third_Party/Tracealyzer/trcEntryTable.c:47:13:xTraceEntryTableInitialize	24	static
+../Middlewares/Third_Party/Tracealyzer/trcEntryTable.c:78:13:xTraceEntryCreate	48	static,ignoring_inline_asm
+../Middlewares/Third_Party/Tracealyzer/trcEntryTable.c:125:13:xTraceEntryDelete	40	static,ignoring_inline_asm
+../Middlewares/Third_Party/Tracealyzer/trcEntryTable.c:166:13:xTraceEntryFind	24	static
+../Middlewares/Third_Party/Tracealyzer/trcEntryTable.c:195:13:xTraceEntrySetSymbol	32	static
+../Middlewares/Third_Party/Tracealyzer/trcEntryTable.c:235:13:xTraceEntryGetCount	16	static
+../Middlewares/Third_Party/Tracealyzer/trcEntryTable.c:248:13:xTraceEntryGetAtIndex	16	static
+../Middlewares/Third_Party/Tracealyzer/trcEntryTable.c:386:20:prvEntryIndexInitialize	16	static
+../Middlewares/Third_Party/Tracealyzer/trcEntryTable.c:400:20:prvEntryIndexTake	24	static

@@ -1,0 +1,4 @@
+../Middlewares/Third_Party/Tracealyzer/trcCounter.c:19:13:xTraceCounterInitialize	16	static
+../Middlewares/Third_Party/Tracealyzer/trcCounter.c:32:13:xTraceCounterSetCallback	16	static
+../Middlewares/Third_Party/Tracealyzer/trcCounter.c:44:13:xTraceCounterCreate	56	static
+../Middlewares/Third_Party/Tracealyzer/trcCounter.c:71:13:xTraceCounterSet	24	static

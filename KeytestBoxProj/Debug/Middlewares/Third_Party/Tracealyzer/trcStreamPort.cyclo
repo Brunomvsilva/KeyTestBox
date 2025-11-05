@@ -1,0 +1,3 @@
+trcStreamPort.c:87:13:prvTraceItmWrite	6
+trcStreamPort.c:112:13:prvTraceItmRead	4
+trcStreamPort.c:143:13:xTraceStreamPortInitialize	1

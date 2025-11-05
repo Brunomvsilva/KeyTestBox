@@ -1,0 +1,4 @@
+../Middlewares/Third_Party/Tracealyzer/trcInterval.c:18:13:xTraceIntervalChannelSetCreate	32	static
+../Middlewares/Third_Party/Tracealyzer/trcInterval.c:40:13:xTraceIntervalChannelCreate	40	static
+../Middlewares/Third_Party/Tracealyzer/trcInterval.c:64:13:xTraceIntervalStart	24	static
+../Middlewares/Third_Party/Tracealyzer/trcInterval.c:80:13:xTraceIntervalStop	16	static

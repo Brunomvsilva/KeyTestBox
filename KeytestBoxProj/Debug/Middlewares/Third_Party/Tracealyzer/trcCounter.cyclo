@@ -1,0 +1,4 @@
+trcCounter.c:19:13:xTraceCounterInitialize	1
+trcCounter.c:32:13:xTraceCounterSetCallback	1
+trcCounter.c:44:13:xTraceCounterCreate	2
+trcCounter.c:71:13:xTraceCounterSet	4

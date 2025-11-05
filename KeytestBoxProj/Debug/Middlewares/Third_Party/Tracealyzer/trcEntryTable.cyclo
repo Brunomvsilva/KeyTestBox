@@ -1,0 +1,10 @@
+trcEntryTable.c:37:13:xTraceEntryIndexTableInitialize	1
+trcEntryTable.c:47:13:xTraceEntryTableInitialize	3
+trcEntryTable.c:78:13:xTraceEntryCreate	4
+trcEntryTable.c:125:13:xTraceEntryDelete	2
+trcEntryTable.c:166:13:xTraceEntryFind	3
+trcEntryTable.c:195:13:xTraceEntrySetSymbol	4
+trcEntryTable.c:235:13:xTraceEntryGetCount	1
+trcEntryTable.c:248:13:xTraceEntryGetAtIndex	1
+trcEntryTable.c:386:20:prvEntryIndexInitialize	2
+trcEntryTable.c:400:20:prvEntryIndexTake	2

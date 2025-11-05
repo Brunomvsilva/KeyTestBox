@@ -1,0 +1,7 @@
+../Middlewares/Third_Party/Tracealyzer/trcPrint.c:25:13:xTracePrintInitialize	16	static
+../Middlewares/Third_Party/Tracealyzer/trcPrint.c:41:13:xTracePrint	32	static
+../Middlewares/Third_Party/Tracealyzer/trcPrint.c:65:13:xTraceConsoleChannelPrintF	16	static
+../Middlewares/Third_Party/Tracealyzer/trcPrint.c:92:13:xTracePrintCompactF	68	static
+../Middlewares/Third_Party/Tracealyzer/trcPrint.c:170:13:xTracePrintF	28	static
+../Middlewares/Third_Party/Tracealyzer/trcPrint.c:189:13:xTraceVPrintF	48	static
+../Middlewares/Third_Party/Tracealyzer/trcPrint.c:233:20:prvTraceVPrintF	48	static

@@ -1,0 +1,7 @@
+../Core/Src/fifo.c:8:8:fifo_init	16	static
+../Core/Src/fifo.c:22:8:fifo_kill	16	static
+../Core/Src/fifo.c:37:8:fifo_push	16	static
+../Core/Src/fifo.c:61:8:fifo_pop	24	static
+../Core/Src/fifo.c:84:8:fifo_pop_last	24	static
+../Core/Src/fifo.c:105:8:fifo_get_message	24	static
+../Core/Src/fifo.c:126:9:fifo_size	16	static

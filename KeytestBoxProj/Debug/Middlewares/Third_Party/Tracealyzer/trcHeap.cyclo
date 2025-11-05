@@ -1,0 +1,3 @@
+trcHeap.c:20:13:xTraceHeapCreate	1
+trcHeap.c:31:13:xTraceHeapAlloc	5
+trcHeap.c:68:13:xTraceHeapFree	4

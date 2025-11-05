@@ -1,0 +1,7 @@
+trcPrint.c:25:13:xTracePrintInitialize	1
+trcPrint.c:41:13:xTracePrint	5
+trcPrint.c:65:13:xTraceConsoleChannelPrintF	4
+trcPrint.c:92:13:xTracePrintCompactF	13
+trcPrint.c:170:13:xTracePrintF	2
+trcPrint.c:189:13:xTraceVPrintF	8
+trcPrint.c:233:20:prvTraceVPrintF	14

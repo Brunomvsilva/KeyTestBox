@@ -1,0 +1,16 @@
+.282837-7 :1 ;Fixed Terminal Blocks 5.08MM PCB MOUNT 7P
+SHDR7W100P0X508_1X7_3556X820X1000P
+*STM J
+*NGS
+*PLB 1="1" 2="2" 3="3" 4="4" 5="5" 6="6" 7="7"
+*MXP 7
+*DFN 282837-7
+~!Mouser Part Number (571-2828377)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/TE-Connectivity/282837-7?qs=A%252Bip%252BNCYi6OpGcunckL3uQ%3D%3D)
+~!Manufacturer_Name (TE Connectivity)
+~!Manufacturer_Part_Number (282837-7)
+~!Link Datasheet (https://componentsearchengine.com/Datasheets/1/282837-7.pdf)
+~!Height (10mm)
+~!3D_Model (282837-7)
+"282837-7"
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 

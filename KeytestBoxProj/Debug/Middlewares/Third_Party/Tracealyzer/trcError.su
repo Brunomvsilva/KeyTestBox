@@ -1,0 +1,7 @@
+../Middlewares/Third_Party/Tracealyzer/trcError.c:26:13:xTraceErrorInitialize	16	static
+../Middlewares/Third_Party/Tracealyzer/trcError.c:42:13:xTraceWarning	16	static
+../Middlewares/Third_Party/Tracealyzer/trcError.c:62:13:xTraceError	16	static
+../Middlewares/Third_Party/Tracealyzer/trcError.c:91:13:xTraceErrorGetLast	16	static
+../Middlewares/Third_Party/Tracealyzer/trcError.c:105:13:xTraceErrorClear	4	static
+../Middlewares/Third_Party/Tracealyzer/trcError.c:119:20:prvTraceErrorPrint	32	static
+../Middlewares/Third_Party/Tracealyzer/trcError.c:185:20:prvTraceErrorGetDescription	16	static

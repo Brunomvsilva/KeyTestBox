@@ -1,0 +1,116 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "MMBZ27VCL-7-F"
+   (description "ESD Suppressors / TVS Diodes 225MW 22V")
+   (family "ANA")
+   (package "SOT96P240X120-3N")
+   (attribute "Datasheet Link" "https://www.diodes.com/assets/Datasheets/MMBZ27VCL.pdf")
+   (attribute "Geometry.Height" "1.2mm")
+   (attribute "Manufacturer_Name" "Diodes Inc.")
+   (attribute "Manufacturer_Part_Number" "MMBZ27VCL-7-F")
+   (attribute "Mouser Part Number" "621-MMBZ27VCL-7-F")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/MMBZ27VCL-7-F?qs=zpnZCIghiEx6bIJf9W4zmw%3D%3D")
+   (attribute "Arrow Part Number" "MMBZ27VCL-7-F")
+   (attribute "Arrow Price/Stock" "https://www.arrow.com/en/products/mmbz27vcl-7-f/diodes-incorporated?region=nac")
+   (gate
+    (symbol "MMBZ27VCL-7-F")
+    (pin "A_1" 1 PS)
+    (pin "A_2" 2 PS)
+    (pin "K" 3 PS)
+   )
+  )
+  (symbol "MMBZ27VCL-7-F"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 700 100) (pt 700 -200) (pt 200 -200) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 900 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "SOT96P240X120-3N"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -1.85 1.75)
+      (pt 1.85 1.75)
+      (pt 1.85 -1.75)
+      (pt -1.85 -1.75)
+      (pt -1.85 1.75))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -0.65 1.45)
+      (pt 0.65 1.45)
+      (pt 0.65 -1.45)
+      (pt -0.65 -1.45)
+      (pt -0.65 1.45))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -0.65 0.49)
+      (pt 0.31 1.45))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -0.15 1.45)
+      (pt 0.15 1.45)
+      (pt 0.15 -1.45)
+      (pt -0.15 -1.45)
+      (pt -0.15 1.45))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -1.6 1.535)
+      (pt -0.5 1.535))))
+   (leg 1 (pt -1.05 0.96) (padstack 0))
+   (leg 2 (pt -1.05 -0.96) (padstack 0))
+   (leg 3 (pt 1.05 0) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.65 1.1 0 0 0))
+   )
+   (model "MMBZ27VCL-7-F.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ESDALC6V1W5
+D TVS Diode Array Uni-Directional ESDALC6V1W5 Quad, 25W, SOT-323 5-Pin
+K
+F http://www.st.com/web/en/resource/technical/document/datasheet/CD00002946.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,9 @@
+../Middlewares/Third_Party/Tracealyzer/trcKernelPort.c:143:13:xTraceKernelPortDelay	16	static
+../Middlewares/Third_Party/Tracealyzer/trcKernelPort.c:150:15:xTraceKernelPortIsSchedulerSuspended	8	static
+../Middlewares/Third_Party/Tracealyzer/trcKernelPort.c:171:13:xTraceKernelPortInitialize	16	static
+../Middlewares/Third_Party/Tracealyzer/trcKernelPort.c:188:13:xTraceKernelPortEnable	32	static
+../Middlewares/Third_Party/Tracealyzer/trcKernelPort.c:235:8:TzCtrl	16	static
+../Middlewares/Third_Party/Tracealyzer/trcKernelPort.c:249:6:vTraceSetQueueName	16	static
+../Middlewares/Third_Party/Tracealyzer/trcKernelPort.c:254:6:vTraceSetSemaphoreName	16	static
+../Middlewares/Third_Party/Tracealyzer/trcKernelPort.c:259:6:vTraceSetMutexName	16	static
+../Middlewares/Third_Party/Tracealyzer/trcKernelPort.c:289:19:xTraceKernelPortGetSystemHeapHandle	4	static

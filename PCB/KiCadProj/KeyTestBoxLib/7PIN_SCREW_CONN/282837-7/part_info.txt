@@ -1,0 +1,9 @@
+Manufacturer=TE Connectivity
+PartNumber=282837-7
+PartCategory=Connector
+PackageCategory=Header, Shrouded - Straight PTH Box
+PinCount=7
+Version=1.1
+Released=2020-02-20 11:07:10
+Downloaded=2023-09-08 10:31:16
+3D=Y

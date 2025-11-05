@@ -1,0 +1,16 @@
+.ESDALC6V1-1U2 :1 ;STMicroelectronics ESDALC6V1-1U2, Uni-Directional TVS Diode, 20W, 2-Pin ST-0201
+ESDALC6V11U2
+*STM D
+*NGS
+*PLB 1="K" 2="A"
+*MXP 2
+*DFN ESDALC6V1-1U2
+~!Mouser Part Number (511-ESDALC6V1-1U2)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/STMicroelectronics/ESDALC6V1-1U2?qs=dgCJ4P5xKlbGZPjlSTLhTA%3D%3D)
+~!Manufacturer_Name (STMicroelectronics)
+~!Manufacturer_Part_Number (ESDALC6V1-1U2)
+~!Link Datasheet (http://www.st.com/web/en/resource/technical/document/datasheet/CD00212838.pdf)
+~!Height (0mm)
+~!3D_Model (ESDALC6V1-1U2)
+ESDALC6V1-1U2
+1.1!U 2.1!U 

@@ -1,0 +1,26 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model ESDALC6V1-1U2
+#/221740/1201000/2.50/2/4/TVS Diode (Uni-directional)
+DEF ESDALC6V1-1U2 D 0 30 Y Y 1 F N
+F0 "D" 400 350 50 H V L BNN
+F1 "ESDALC6V1-1U2" 400 250 50 H V L BNN
+F2 "ESDALC6V11U2" 400 150 50 H I L BNN
+F3 "http://www.st.com/web/en/resource/technical/document/datasheet/CD00212838.pdf" 400 50 50 H I L BNN
+F4 "STMicroelectronics ESDALC6V1-1U2, Uni-Directional TVS Diode, 20W, 2-Pin ST-0201" 400 -50 50 H I L BNN "Description"
+F5 "0" 400 -150 50 H I L BNN "Height"
+F6 "511-ESDALC6V1-1U2" 400 -250 50 H I L BNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/ESDALC6V1-1U2?qs=dgCJ4P5xKlbGZPjlSTLhTA%3D%3D" 400 -350 50 H I L BNN "Mouser Price/Stock"
+F8 "STMicroelectronics" 400 -450 50 H I L BNN "Manufacturer_Name"
+F9 "ESDALC6V1-1U2" 400 -550 50 H I L BNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 600 0 200 L 50 50 0 0 P
+P 4 0 1 6 200 0 400 100 400 -100 200 0 N
+P 2 0 1 6 200 -80 240 -100 N
+P 2 0 1 6 200 -80 200 80 N
+P 2 0 1 6 160 100 200 80 N
+ENDDRAW
+ENDDEF
+#
+#End Library

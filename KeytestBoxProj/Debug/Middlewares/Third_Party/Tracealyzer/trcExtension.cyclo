@@ -1,0 +1,4 @@
+trcExtension.c:27:13:xTraceExtensionInitialize	1
+trcExtension.c:42:13:xTraceExtensionCreate	2
+trcExtension.c:82:13:xTraceExtensionGetBaseEventId	1
+trcExtension.c:101:13:xTraceExtensionGetConfigName	1

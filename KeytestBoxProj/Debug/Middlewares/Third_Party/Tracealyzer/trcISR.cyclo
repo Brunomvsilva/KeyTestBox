@@ -1,0 +1,5 @@
+trcISR.c:19:13:xTraceISRInitialize	3
+trcISR.c:49:13:xTraceISRRegister	14
+trcISR.c:108:13:xTraceISRBegin	3
+trcISR.c:151:13:xTraceISREnd	4
+trcISR.c:239:18:xTraceSetISRProperties	1

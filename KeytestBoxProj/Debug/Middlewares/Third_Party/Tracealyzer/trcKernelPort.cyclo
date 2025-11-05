@@ -1,0 +1,9 @@
+trcKernelPort.c:143:13:xTraceKernelPortDelay	1
+trcKernelPort.c:150:15:xTraceKernelPortIsSchedulerSuspended	1
+trcKernelPort.c:171:13:xTraceKernelPortInitialize	2
+trcKernelPort.c:188:13:xTraceKernelPortEnable	4
+trcKernelPort.c:235:8:TzCtrl	1
+trcKernelPort.c:249:6:vTraceSetQueueName	1
+trcKernelPort.c:254:6:vTraceSetSemaphoreName	1
+trcKernelPort.c:259:6:vTraceSetMutexName	1
+trcKernelPort.c:289:19:xTraceKernelPortGetSystemHeapHandle	1

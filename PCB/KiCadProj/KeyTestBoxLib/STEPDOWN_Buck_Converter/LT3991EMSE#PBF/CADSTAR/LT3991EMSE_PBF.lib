@@ -1,0 +1,18 @@
+.LT3991EMSE_PBF :1 ;LINEAR TECHNOLOGY - LT3991EMSE#PBF - DC-DC Switching Buck (Step Down) Regulator, Adjustable, 4.3V-55Vin, 1.19V-30Vout, 1.2Aout, MSOP-10
+SOP50P490X110-11N
+*STM IC
+*NGS
+*PLB 1="BD" 2="BOOST" 3="SW" 4="VIN" 5="EN" 6="FB" 7="SS" 8="RT" 9="PG" 10="SYNC" 11="GND"
+*MXP 11
+*DFN LT3991EMSE_PBF
+~!Manufacturer_Name (Analog Devices)
+~!Manufacturer_Part_Number (LT3991EMSE#PBF)
+~!Mouser Part Number (584-LT3991EMSE#PBF)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Analog-Devices-Linear-Technology/LT3991EMSEPBF?qs=hVkxg5c3xu%2FPU%252Bq5oSghVA%3D%3D)
+~!Arrow Part Number (LT3991EMSE#PBF)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/lt3991emsepbf/analog-devices)
+~!Link Datasheet (https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-SFU4/DSASF4000-3355.pdf)
+~!Height (1.1mm)
+~!3D_Model (LT3991EMSE#PBF)
+LT3991EMSE_PBF
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 11.1!U 10.1!U 9.1!U 8.1!U 7.1!U 6.1!U 

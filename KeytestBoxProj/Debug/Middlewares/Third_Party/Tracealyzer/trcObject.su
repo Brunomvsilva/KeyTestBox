@@ -1,0 +1,10 @@
+../Middlewares/Third_Party/Tracealyzer/trcObject.c:26:13:xTraceObjectRegisterInternal	64	static,ignoring_inline_asm
+../Middlewares/Third_Party/Tracealyzer/trcObject.c:105:13:xTraceObjectRegister	40	static
+../Middlewares/Third_Party/Tracealyzer/trcObject.c:110:13:xTraceObjectUnregister	32	static
+../Middlewares/Third_Party/Tracealyzer/trcObject.c:145:13:xTraceObjectSetName	32	static
+../Middlewares/Third_Party/Tracealyzer/trcObject.c:176:13:xTraceObjectRegisterWithoutHandle	40	static
+../Middlewares/Third_Party/Tracealyzer/trcObject.c:183:13:xTraceObjectUnregisterWithoutHandle	56	static,ignoring_inline_asm
+../Middlewares/Third_Party/Tracealyzer/trcObject.c:207:13:xTraceObjectSetNameWithoutHandle	48	static,ignoring_inline_asm
+../Middlewares/Third_Party/Tracealyzer/trcObject.c:234:13:xTraceObjectSetSpecificStateWithoutHandle	56	static,ignoring_inline_asm
+../Middlewares/Third_Party/Tracealyzer/trcObject.c:257:13:xTraceObjectSetOptionsWithoutHandle	48	static,ignoring_inline_asm
+../Middlewares/Third_Party/Tracealyzer/trcObject.c:285:13:prvTraceObjectSendNameEvent	32	static

@@ -1,0 +1,9 @@
+../Middlewares/Third_Party/Tracealyzer/trcDiagnostics.c:19:13:xTraceDiagnosticsInitialize	24	static
+../Middlewares/Third_Party/Tracealyzer/trcDiagnostics.c:38:13:xTraceDiagnosticsGet	16	static
+../Middlewares/Third_Party/Tracealyzer/trcDiagnostics.c:54:13:xTraceDiagnosticsSet	16	static
+../Middlewares/Third_Party/Tracealyzer/trcDiagnostics.c:67:13:xTraceDiagnosticsAdd	16	static
+../Middlewares/Third_Party/Tracealyzer/trcDiagnostics.c:80:13:xTraceDiagnosticsIncrease	16	static
+../Middlewares/Third_Party/Tracealyzer/trcDiagnostics.c:85:13:xTraceDiagnosticsDecrease	16	static
+../Middlewares/Third_Party/Tracealyzer/trcDiagnostics.c:90:13:xTraceDiagnosticsSetIfHigher	16	static
+../Middlewares/Third_Party/Tracealyzer/trcDiagnostics.c:106:13:xTraceDiagnosticsSetIfLower	16	static
+../Middlewares/Third_Party/Tracealyzer/trcDiagnostics.c:122:13:xTraceDiagnosticsCheckStatus	8	static

@@ -1,0 +1,14 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "6cb955c0-7277-4790-9366-1c217906ccbb")
+	(paper "A3")
+	(title_block
+		(title "STM32F7 KeyTestBox")
+		(date "2023-08-17")
+		(rev "V1.0")
+		(company "Preh")
+	)
+	(lib_symbols)
+)

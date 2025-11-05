@@ -1,0 +1,2 @@
+../Middlewares/Third_Party/Tracealyzer/trcString.c:18:13:xTraceStringRegister	40	static
+../Middlewares/Third_Party/Tracealyzer/trcString.c:67:21:xTraceRegisterString	24	static

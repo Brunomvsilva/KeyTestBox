@@ -1,0 +1,9 @@
+Manufacturer=Diodes Inc.
+PartNumber=MMBZ27VCL-7-F
+PartCategory=Integrated Circuit
+PackageCategory=SOT23 (3-Pin)
+PinCount=3
+Version=1.1
+Released=2023-02-01 05:42:51
+Downloaded=2023-09-01 16:42:04
+3D=Y

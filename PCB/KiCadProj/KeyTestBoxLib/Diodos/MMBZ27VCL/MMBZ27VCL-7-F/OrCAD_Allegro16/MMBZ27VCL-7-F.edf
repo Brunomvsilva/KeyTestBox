@@ -1,0 +1,107 @@
+
+(EDIF
+  (rename &MMBZ27VCL_7_F "MMBZ27VCL_7_F")
+  (EDIFVersion 2 0 0)
+  (EDIFLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2023 09 01 16 42 04)
+      (dataOrigin "257439/1201000/2.50/3/3/Integrated Circuit")
+      (program "SamacSys ECAD Model MMBZ27VCL_7_F"
+        (version "1.1"))))
+  (library
+  (rename &MMBZ27VCL_7_F "MMBZ27VCL_7_F")
+    (EDIFLevel 0)
+    (technology
+      (numberDefinition (scale 1 (e 254 -6) (unit DISTANCE)))
+      (userData GRIDRESOLUTION (integer 50 50))
+      (figureGroup DEFAULT (pathWidth 10) (textHeight 100))
+      (figureGroup PROPERTY (pathWidth 10) (textHeight 90))
+      (figureGroup PINNUMBER (pathWidth 10) (textHeight 90))
+      (figureGroup PINNAME (pathWidth 10) (textHeight 90))
+      (figureGroup COMMENT (pathWidth 10) (textHeight 90))
+      (figureGroup PIN (pathWidth 10) (textHeight 90))
+      (figureGroup GRAPHIC (pathWidth 10) (textHeight 100))
+    )
+    (cell
+      (rename &MMBZ27VCL_7_F "MMBZ27VCL_7_F")
+      (cellType GENERIC)
+      (view
+        (rename NORMAL "Normal")
+        (viewType SCHEMATIC)
+        (interface
+          (designator "IC")
+          (property (rename PACKAGENAME "PackageName") (string "MMBZ27VCL_7_F"))
+          (property (rename ISHETEROGENEOUS "IsHeterogeneous") (string "False"))
+          (property (rename DEVICESINVIEW "DevicesInView") (string "1"))
+          (property (rename DEVICESINPACKAGE "DevicesInPackage") (string "1"))
+          (property (rename DEVICEDESIGNATOR "DeviceDesignator") (string "A"))
+          (property (rename DEVICENUMBERING "DeviceNumbering") (string "Alpha"))
+          (property (rename PCB_32_FOOTPRINT "PCB Footprint") (string "SOT96P240X120-3N"))
+          (property (rename &Manufacturer_Name "Manufacturer_Name") (string "Diodes Inc."))
+          (property (rename &Manufacturer_Part_Number "Manufacturer_Part_Number") (string "MMBZ27VCL-7-F"))
+          (property (rename &Mouser_Part_Number "Mouser Part Number") (string "621-MMBZ27VCL-7-F"))
+          (property (rename &Mouser_Price_Stock "Mouser Price/Stock") (string "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/MMBZ27VCL-7-F?qs=zpnZCIghiEx6bIJf9W4zmw%3D%3D"))
+          (property (rename &Arrow_Part_Number "Arrow Part Number") (string "MMBZ27VCL-7-F"))
+          (property (rename &Arrow_Price_Stock "Arrow Price/Stock") (string "https://www.arrow.com/en/products/mmbz27vcl-7-f/diodes-incorporated?region=nac"))
+          (property (rename &Description "Description") (string "ESD Suppressors / TVS Diodes 225MW 22V"))
+          (property (rename &Datasheet_Link "Datasheet Link") (string "https://www.diodes.com/assets/Datasheets/MMBZ27VCL.pdf"))
+          (property (rename &Height "Height") (string "1.2 mm"))
+          (property (rename &_60__32_VALUE_32__62_ "Value") (string "MMBZ27VCL_7_F"))
+          (property (rename VALUE "Value") (string "Value"))
+          (port
+            (rename &A_1 "A_1")
+            (designator "1")
+            (property (rename ORDER "Order") (string "0") (owner "OrCAD"))
+          )
+          (port
+            (rename &A_2 "A_2")
+            (designator "2")
+            (property (rename ORDER "Order") (string "1") (owner "OrCAD"))
+          )
+          (port
+            (rename &K "K")
+            (designator "3")
+            (property (rename ORDER "Order") (string "2") (owner "OrCAD"))
+          )
+          (symbol
+            (portImplementation
+              (name &A_1 (display PINNAME))
+              (keywordDisplay DESIGNATOR (display PINNUMBER))
+              (figure PIN (path (pointList (pt -200 -100) (pt 0 -100))))
+              (connectLocation (figure GRAPHIC (dot (pt -200 -100))))
+            )
+            (portImplementation
+              (name &A_2 (display PINNAME))
+              (keywordDisplay DESIGNATOR (display PINNUMBER))
+              (figure PIN (path (pointList (pt -200 -200) (pt 0 -200))))
+              (connectLocation (figure GRAPHIC (dot (pt -200 -200))))
+            )
+            (portImplementation
+              (name &K (display PINNAME))
+              (keywordDisplay DESIGNATOR (display PINNUMBER))
+              (figure PIN (path (pointList (pt 500 -100) (pt 700 -100))))
+              (connectLocation (figure GRAPHIC (dot (pt 700 -100))))
+            )
+            (figure GRAPHIC
+              (figureGroupOverride GRAPHIC
+                (pathWidth 10))
+              (path
+                (pointList
+                  (pt 0 0)
+                  (pt 500 0)
+                  (pt 500 -300)
+                  (pt 0 -300)
+                  (pt 0 0)
+                )
+              )
+            )
+            (keywordDisplay DESIGNATOR (display PROPERTY (justify LOWERLEFT) (orientation R0) (origin (pt 550 130))))
+            (propertyDisplay &_60__32_VALUE_32__62_ (display PROPERTY (justify LOWERLEFT) (orientation R0) (origin (pt 550 30))))
+          )
+        )
+      )
+    )
+  )
+)
