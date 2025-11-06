@@ -6,12 +6,50 @@
 
 ---
 
-## Introduction (Context)
+## Introduction 
 
-Automotive HMI (climate and central console panels) relies on high-quality tactile feedback for safety and user experience. **Force–displacement** key tests quantify that feel essencially by measuring the relation between **applied force** and **key travel**. 
+Automotive HMI (climate and central console panels) relies on high-quality tactile feedback for safety and user experience. **Force–displacement** key tests quantify that feel essencially by measuring the relation between **applied force** and **key travel**.
+
+Images below display the main components of the system
+
+<div align="center">
+
+<table bgcolor="#e6f2ff"> <!-- light blue -->
+  <tr>
+    <td><img src="Images/SystemKeytest.png" width="200"></td>
+    <td><img src="Images/Diagrama_SmacLoadCell.png" width="200"></td>
+  </tr>
+</table>
+
+</div>
+
+
+
+
+
+- A Key is **pressed** using a SMAC Motor
+- **Force** is measured using a Load Cell and an Amplifier
+- **Key travel** is given by the SMAC encoder
+- **The Unit Under Test** sends data during the test via **CAN/LIN**, such as:
+    - If the Key is pressed (On/Off)
+    - 
+
 
 ### Incremental vs Continuous Tests
 
+**Incremental Tests**
+
+The actuator moves in **small fixed steps** and stops at each position to sample values.
+
+**Characteristics:**
+- Low cost, simple to implement  
+- Data only acquired when the actuator is stopped → **low resolution**  
+- May miss the **snap point**, especially on **short-travel keys**  
+
+**Data acquisition in current systems:**
+- **Force** → USB DAQ (National Instruments) connected to the host PC  
+- **Position** → Requested via RS232 command (TP – Tell Position) from the actuator controller  
+- **Key state / electrical info** → Received via CAN/LIN to USB converter  
 
 
 ### Systems without the KeyTestBox
