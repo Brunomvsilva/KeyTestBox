@@ -1,14 +1,18 @@
-# KeytestBox — Automotive Key Testing System
+# KeytestBox
 
-> A modular, embedded “black-box” platform to acquire **force–displacement** curves and **electrical key status** (CAN/LIN) for automotive HMI panels, while **cutting the cost** of continuous-quality testing.
+> A modular embedded platform designed to integrate automotive HMI key-testing systems in production lines.
+
+> This project was developed at Preh Portugal as part of a Master’s thesis.
 
 ---
 
 ## Introduction (Context)
 
-Automotive HMI (climate and central console panels) relies on high-quality tactile feedback for safety and user experience. Force–displacement key tests quantify that feel by measuring the relation between **applied force** and **key travel**, along with on/off electrical state. Preh Portugal engineers these tests for multiple OEMs and models on production lines.
+Automotive HMI (climate and central console panels) relies on high-quality tactile feedback for safety and user experience. **Force–displacement** key tests quantify that feel essencially by measuring the relation between **applied force** and **key travel**. 
 
-Key tactile quality is commonly assessed with a **linear actuator** (press/release), a **load cell** (force), and an **encoder** (position), optionally complemented by **CAN/LIN** messages from the device under test. Data can be acquired directly by a host PC or by an intermediate embedded node and forwarded over **Ethernet**. :contentReference[oaicite:1]{index=1}
+### System without the KeyTestBox
+
+
 
 ---
 
@@ -19,12 +23,6 @@ Key tactile quality is commonly assessed with a **linear actuator** (press/relea
 - Per-station **software adaptation** remains manual and time-consuming for product-specific setups.
 
 **Primary improvement targeted:** deliver **continuous-quality data at much lower cost**, with a uniform Ethernet command interface.
-
----
-
-## Motivation
-
-Standardizing and encapsulating the test logic reduces engineering effort, accelerates delivery, and enables broader deployment of continuous-quality testing across lines—**improving throughput and lowering cycle time** without sacrificing accuracy.
 
 ---
 
