@@ -10,19 +10,32 @@
 
 Automotive HMI (climate and central console panels) relies on high-quality tactile feedback for safety and user experience. **Force–displacement** key tests quantify that feel essencially by measuring the relation between **applied force** and **key travel**. 
 
-### System without the KeyTestBox
+### Incremental vs Continuous Tests
 
 
+
+### Systems without the KeyTestBox
+
+<p align="center">
+  <img src="Images/sistema_atual.png" alt="Current System Architecture" width="650">
+</p>
+
+**This system is usually used for Incremental Tests** 
+
+- **Force** data is acquired by the host PC via a USB Data Acquisition (DAQ) device from National Instruments.
+- **Position** data is acquired by RS232 from the actuator controller
+- **Key State or info** data is acquired through a CAN/LIN-USB converter
 
 ---
 
 ## Problem Statement
 
-- **Incremental tests** (pause & sample) are cheaper but often **miss snap events** on **short-travel keys** due to low sample density.  
-- **Continuous tests** (sample while moving) give **higher resolution** and better results but current solutions are **significantly more expensive** and harder to scale across stations.  
-- Per-station **software adaptation** remains manual and time-consuming for product-specific setups.
+- **Incremental tests** are cheaper but can cause some problems or may not meet some usual requirements, such as:
+   - **miss snap events** on **short-travel keys** due to low sample density.
+   - 
+- **Continuous tests** (sample while moving) give **higher resolution** and better results but current solutions are **significantly more expensive**.  
 
-**Primary improvement targeted:** deliver **continuous-quality data at much lower cost**, with a uniform Ethernet command interface.
+**Primary improvement targeted:** deliver **continuous-quality data at much lower cost**.
 
 ---
 
