@@ -2,67 +2,180 @@
 
 > A modular embedded platform designed to integrate automotive HMI key-testing systems in production lines.
 
-> This project was developed at Preh Portugal as part of a Master’s thesis.
+> This project was developed at Preh Portugal as part of my Master’s thesis.
 
 ---
 
 ## Introduction 
 
-Automotive HMI (climate and central console panels) relies on high-quality tactile feedback for safety and user experience. **Force–displacement** key tests quantify that feel essencially by measuring the relation between **applied force** and **key travel**.
+Automotive HMI, such as climate and central control panels, rely on high-quality tactile feedback. **Force–displacement** key tests quantify that feel essencially by measuring the relation between **applied force** and **key travel**.
 
-Images below display the main components of the system
+Images below display the **main components** of a key test system
 
 <div align="center">
-
-<table bgcolor="#e6f2ff"> <!-- light blue -->
+<table>
   <tr>
-    <td><img src="Images/SystemKeytest.png" width="200"></td>
-    <td><img src="Images/Diagrama_SmacLoadCell.png" width="200"></td>
+    <td style="padding-right: 40px;">
+      <img src="Images/SystemKeytest.png" width="210">
+    </td>
+    <td style="padding-left: 40px;">
+      <img src="Images/Diagrama_SmacLoadCell.png" width="155">
+    </td>
+  </tr>
+</table>
+</div>
+
+**During a test:**
+- The key is pressed by a **SMAC linear motor**  
+- **Force** is measured using a **load cell with an amplifier**  
+- **Key travel (displacement)** is obtained from the **SMAC internal encoder**  
+- The **Unit Under Test (UUT)** sends data via **CAN/LIN** during the test, such as:  
+  - **Key state (pressed / released)**
+  - **Lever position or angle** (e.g. gear selector tests)  
+  - **Selected gear value**  
+  - **UUT Hall sensors or internal position data**  
+  - Other diagnostic or status information
+
+
+
+### Typical Key Test Output
+
+The **Force–Displacement** curve is the most common way to characterize how a key or button behaves when it is pressed and released. It represents the force applied to the key as a function of its travel (displacement).
+
+<p align="center">
+  <img src="Images/Force-strokeCurve.png" width="300">
+</p>
+
+Curves differ depending on the type of key being tested.
+During a test, the key is pressed (force increases) until it reaches a maximum point, and then released. From this curve, mechanical parameters of the key can be extracted:
+
+| Symbol | Description |
+|--------|-------------|
+| **S1** | Displacement at which the key actuates (snap/collapse point). |
+| **F1** | Actuation force – force required to trigger the snap of the membrane or key mechanism at S1. |
+| **S2** | Displacement where electrical contact occurs with the PCB. |
+| **F2** | Contact force – minimum force required to close the electrical contact at S2. |
+| **F3** | Return force – force at which the electrical contact is released during the return movement. |
+| **F4** | Force difference between actuation and release states. |
+| **F5** | Maximum applied force during the test (should not exceed mechanical limits). |
+| **Ss** | Maximum travel / end of mechanical stroke. |
+
+One of the most important metrics derived from this curve is the **Snap Ratio (SR)**, which indicates how strong the tactile feedback is:
+
+$$
+SR=\dfrac{F_1-F_2}{F_1}\times 100\%
+$$
+
+- A higher **Snap Ratio** = stronger tactile feedback (more noticeable “click”).
+- A lower **Snap Ratio** = softer feedback, which may feel smoother but less perceptible.
+- Ideal **SR** values depend on the application.
+
+
+
+## Incremental vs Continuous Tests
+
+The flowcharts below provide a simplified comparison between the two testing methods.  
+The main difference is that in **Incremental Tests**, the actuator stops at each step to acquire a sample, while in **Continuous Tests**, the actuator moves without stopping and data is sampled in real time.
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="Images/IncrementalTestFlowchart.png" width="275"><br>
+      <em>Incremental Test Flowchart</em>
+    </td>
+    <td align="center">
+      <img src="Images/ContinuousTestFlowchart.png" width="250"><br>
+      <em>Continuous Test Flowchart</em>
+    </td>
   </tr>
 </table>
 
-</div>
+## Incremental Tests
 
+**Advantages:**
+- Low cost
+- Easier to implement
 
+**Disadvantages**
+- **low test resolution** (low sample density)
+- May miss the sampling of the **snap point**, especially on **short-travel keys**
+- Can fail to meet client requirements
 
-
-
-- A Key is **pressed** using a SMAC Motor
-- **Force** is measured using a Load Cell and an Amplifier
-- **Key travel** is given by the SMAC encoder
-- **The Unit Under Test** sends data during the test via **CAN/LIN**, such as:
-    - If the Key is pressed (On/Off)
-    - 
-
-
-### Incremental vs Continuous Tests
-
-**Incremental Tests**
-
-The actuator moves in **small fixed steps** and stops at each position to sample values.
-
-**Characteristics:**
-- Low cost, simple to implement  
-- Data only acquired when the actuator is stopped → **low resolution**  
-- May miss the **snap point**, especially on **short-travel keys**  
-
-**Data acquisition in current systems:**
-- **Force** → USB DAQ (National Instruments) connected to the host PC  
-- **Position** → Requested via RS232 command (TP – Tell Position) from the actuator controller  
-- **Key state / electrical info** → Received via CAN/LIN to USB converter  
-
-
-### Systems without the KeyTestBox
+### Incremental Test Output Example
 
 <p align="center">
-  <img src="Images/sistema_atual.png" alt="Current System Architecture" width="650">
+  <img src="Images/IncTestGraph.png" alt="Inc Test Graph" width="480">
 </p>
 
-**This system is usually used for Incremental Tests** 
+
+### Incremental Key Test System Example (without the KeyTestBox)
+
+<p align="center">
+  <img src="Images/sistema_atual.png" alt="Current System Architecture" width="550">
+</p>
 
 - **Force** data is acquired by the host PC via a USB Data Acquisition (DAQ) device from National Instruments.
 - **Position** data is acquired by RS232 from the actuator controller
 - **Key State or info** data is acquired through a CAN/LIN-USB converter
+
+## Continuous Tests
+
+Unlike incremental tests, continuous testing does **not stop the actuator during data acquisition**. The actuator moves at a constant speed, while force, position and UUT state are sampled in real time.
+
+### Advantages:
+- **High resolution** (more samples along the key travel)
+- **Better detection of snap point and curve shape**
+- **Faster test cycle time** → important for production lines
+
+### Disadvantages:
+- **Significantly Higher cost**
+
+---
+
+### Continuous Test Output Example
+
+<p align="center">
+  <img src="Images/TesteContinuoGrafico.png" alt="Continuous Test Graph" width="300">
+</p>
+
+---
+
+### Continuous Key Test System Example (without the KeyTestBox)
+
+<p align="center">
+  <img src="Images/sistema_cDAQ.pdf" alt="Continuous Test System" width="250">
+</p>
+
+- **Force** is acquired by a load cell → USB DAQ  
+- **Position** is provided continuously by the SMAC actuator encoder  
+- The **UUT sends data via CAN or LIN** during movement  
+- Data is timestamped in the PC (Host) and later combined to generate the full force–displacement curve
+
+> This system provides high accuracy but is expensive and not easily reusable between different test stations.
+
+---
+
+### Problem in Continuous Testing (Without Synchronization)
+
+In systems that use **request/response CAN or LIN messages**, key data is not sent continuously.  
+If the actuator is moving and the host requests UUT data, the response arrives **delayed**, causing force and position to no longer correspond to the real key state at that moment.
+
+<p align="center">
+  <img src="Images/ContTestSamplingProblem.png" width="450"><br>
+  <em>Sampling delay problem during continuous actuator movement</em>
+</p>
+
+---
+
+### Why KeyTestBox?
+
+The goal of the **KeyTestBox** is to provide a **low-cost, modular and synchronized solution** for continuous testing:
+- Real-time synchronization between **Force + Position + UUT data**
+- Works with **CAN / LIN / analog sensors**
+- Replaces expensive cDAQ systems
+- Designed to be easily integrated into any test station
+
+
 
 ---
 
