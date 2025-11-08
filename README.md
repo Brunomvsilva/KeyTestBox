@@ -169,7 +169,7 @@ Many devices under test (UUTs) only report their internal state (e.g., whether a
 If the actuator is moving during this time (as in a continuous test), by the time the host receives the data, the key is already in a **different position**, and the measured force has also changed. This causes a mismatch between the **key state**, **position**, and **force**, making the data unreliable.
 
 <p align="center">
-  <img src="Images/SmacSampleDelay-1.png" alt="Sampling delay during continuous motion (request/response CAN/LIN)" width="560">
+  <img src="Images/SmacSampleDelay-1.png" alt="Sampling delay during continuous motion (request/response CAN/LIN)" width="470">
 </p>
 
 ---
@@ -230,7 +230,7 @@ The **KeyTestBox** is proposed as a **low-cost**, **modular**, and **reusable** 
 ## Hardware Overview
 
 <p align="center">
-  <img src="Images/HardwareDesign.png" alt="overviewHardware" width="820">
+  <img src="Images/HardwareDesignOverview.png" alt="overviewHardware" width="600">
 </p>
 
 ---
@@ -247,7 +247,7 @@ The **KeyTestBox** is proposed as a **low-cost**, **modular**, and **reusable** 
 - MCP2021 (LIN)
 - MCP2551 (CAN)
 - MAX232 (RS232 Converter) 
-
+- STLINK-V3 Debugger SWD
  
 <table align="center">
   <tr>
@@ -267,13 +267,16 @@ The **KeyTestBox** is proposed as a **low-cost**, **modular**, and **reusable** 
 
 ## Software and Tools used
 
-- STM32Cube
+- STM32Cube IDE
 - FreeRTOS
 - LwIP IP Stack
 - Mosquitto MQTT
 - Percepio Tracealyzer
 
 ---
+
+## MQTT Commands Implemented
+
 
 
 
