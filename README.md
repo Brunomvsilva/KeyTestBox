@@ -25,7 +25,7 @@ Images below display the **main components** of a key test system
 </table>
 </div>
 
-**During a test:**
+### During a test:
 - The key is pressed by a **SMAC linear motor**  
 - **Force** is measured using a **load cell with an amplifier**  
 - **Key travel (displacement)** is obtained from the **SMAC internal encoder**  
@@ -35,7 +35,6 @@ Images below display the **main components** of a key test system
   - **Selected gear value**  
   - **UUT Hall sensors or internal position data**  
   - Other diagnostic or status information
-
 
 
 ### Typical Key Test Output
@@ -70,7 +69,7 @@ $$
 - A lower **Snap Ratio** = softer feedback, which may feel smoother but less perceptible.
 - Ideal **SR** values depend on the application.
 
-
+---
 
 ## Incremental vs Continuous Tests
 
@@ -90,13 +89,25 @@ The main difference is that in **Incremental Tests**, the actuator stops at each
   </tr>
 </table>
 
+---
+
 ## Incremental Tests
 
-**Advantages:**
+### Incremental Test System Example (without the KeyTestBox)
+
+<p align="center">
+  <img src="Images/sistema_atual.png" alt="Current System Architecture" width="550">
+</p>
+
+- **Force** data is acquired by the host PC via a USB Data Acquisition (DAQ) device from National Instruments.
+- **Position** data is acquired by RS232 from the actuator controller
+- **Key State or info** data is acquired through a CAN/LIN-USB converter
+
+### Advantages:
 - Low cost
 - Easier to implement
 
-**Disadvantages**
+### Disadvantages
 - **low test resolution** (low sample density)
 - May miss the sampling of the **snap point**, especially on **short-travel keys**
 - Can fail to meet client requirements
@@ -108,122 +119,161 @@ The main difference is that in **Incremental Tests**, the actuator stops at each
 </p>
 
 
-### Incremental Key Test System Example (without the KeyTestBox)
-
-<p align="center">
-  <img src="Images/sistema_atual.png" alt="Current System Architecture" width="550">
-</p>
-
-- **Force** data is acquired by the host PC via a USB Data Acquisition (DAQ) device from National Instruments.
-- **Position** data is acquired by RS232 from the actuator controller
-- **Key State or info** data is acquired through a CAN/LIN-USB converter
+---
 
 ## Continuous Tests
 
-Unlike incremental tests, continuous testing does **not stop the actuator during data acquisition**. The actuator moves at a constant speed, while force, position and UUT state are sampled in real time.
+### Continuous Test System (Without KeyTestBox)
 
-### Advantages:
-- **High resolution** (more samples along the key travel)
-- **Better detection of snap point and curve shape**
-- **Faster test cycle time** → important for production lines
+<p align="center">
+  <img src="Images/sistema_cDAQ-1.png" alt="Continuous Test System" width="550">
+</p>
 
-### Disadvantages:
-- **Significantly Higher cost**
+In continuous testing, the actuator **moves without stopping**, and all signals are sampled in real time. This enables a smoother force–displacement curve and higher data accuracy.
 
----
+- **Force** is measured by a load cell and continuously acquired via the DAQ system  
+- **Position (travel)** is obtained from the SMAC actuator encoder in real time  
+- The **Unit Under Test (UUT)** transmits its state (CAN/LIN), such as key/lever status or sensor values, during movement  
+- All data is timestamped and saved by the DAQ system for later processing  
+
+> While this setup delivers high accuracy and resolution, it uses sophisticated hardware and is **significantly more expensive**.
+
+### Advantages
+- **High sample density** → more precise force–travel curve  
+- **Accurate snap detection**  
+- **Faster test execution** → important in industrial production environments  
+
+### Disadvantages
+- **Substantially higher cost** due to DAQ modules and synchronization hardware.
 
 ### Continuous Test Output Example
 
 <p align="center">
-  <img src="Images/TesteContinuoGrafico.png" alt="Continuous Test Graph" width="300">
+  <img src="Images/TesteContinuoGrafico.png" alt="Continuous Test Graph" width="450">
 </p>
-
----
-
-### Continuous Key Test System Example (without the KeyTestBox)
-
-<p align="center">
-  <img src="Images/sistema_cDAQ.pdf" alt="Continuous Test System" width="250">
-</p>
-
-- **Force** is acquired by a load cell → USB DAQ  
-- **Position** is provided continuously by the SMAC actuator encoder  
-- The **UUT sends data via CAN or LIN** during movement  
-- Data is timestamped in the PC (Host) and later combined to generate the full force–displacement curve
-
-> This system provides high accuracy but is expensive and not easily reusable between different test stations.
-
----
-
-### Problem in Continuous Testing (Without Synchronization)
-
-In systems that use **request/response CAN or LIN messages**, key data is not sent continuously.  
-If the actuator is moving and the host requests UUT data, the response arrives **delayed**, causing force and position to no longer correspond to the real key state at that moment.
-
-<p align="center">
-  <img src="Images/ContTestSamplingProblem.png" width="450"><br>
-  <em>Sampling delay problem during continuous actuator movement</em>
-</p>
-
----
-
-### Why KeyTestBox?
-
-The goal of the **KeyTestBox** is to provide a **low-cost, modular and synchronized solution** for continuous testing:
-- Real-time synchronization between **Force + Position + UUT data**
-- Works with **CAN / LIN / analog sensors**
-- Replaces expensive cDAQ systems
-- Designed to be easily integrated into any test station
-
-
 
 ---
 
 ## Problem Statement
 
-- **Incremental tests** are cheaper but can cause some problems or may not meet some usual requirements, such as:
-   - **miss snap events** on **short-travel keys** due to low sample density.
-   - 
-- **Continuous tests** (sample while moving) give **higher resolution** and better results but current solutions are **significantly more expensive**.  
+In industrial test setups, especially for testing mechanical keys, the most common approach is the **incremental test method**. This approach is simple and cost-effective, and it can work well in many cases.
 
-**Primary improvement targeted:** deliver **continuous-quality data at much lower cost**.
+However, **in several real-world situations, incremental testing is not sufficient or may not work at all**. These limitations arise due to the way the test equipment communicates and the type of measurements required:
 
 ---
 
-## Objectives
+### Problem 1: Delay when reading UUT data via CAN or LIN
 
-- Design and build **hardware + firmware** for a unified test box (KeytestBox).  
-- Acquire **force**, **position**, and **key electrical status (CAN/LIN)**.  
-- Stream results via **Ethernet** (host command interface + data output).  
-- Provide a **reusable command-based workflow** instead of per-station code edits. :contentReference[oaicite:5]{index=5}
+Many devices under test (UUTs) only report their internal state (e.g., whether a button is pressed or not) when the host explicitly **requests the data** using a communication protocol like **CAN** or **LIN**. This process introduces a delay between the request and the response.
 
----
-
-## What KeytestBox Provides
-
-- **Continuous or incremental testing** with consistent data packaging. :contentReference[oaicite:6]{index=6}  
-- **Low-cost embedded acquisition** (load cell + encoder + CAN/LIN) vs. high-end lab DAQ. :contentReference[oaicite:7]{index=7}  
-- **Ethernet control & data** so the host only speaks commands (no station-specific rewrites). :contentReference[oaicite:8]{index=8}
-
----
-
-## Images (add your files under `/Images`)
-> Replace the placeholders below with your actual image files.
+If the actuator is moving during this time (as in a continuous test), by the time the host receives the data, the key is already in a **different position**, and the measured force has also changed. This causes a mismatch between the **key state**, **position**, and **force**, making the data unreliable.
 
 <p align="center">
-  <img src="Images/system_overview.png" alt="System overview: actuator, load cell, encoder, CAN/LIN, Ethernet" width="720">
-</p>
-
-<p align="center">
-  <img src="Images/keytestbox_pcb_top.png" alt="KeytestBox PCB – top view" width="720">
-</p>
-
-<p align="center">
-  <img src="Images/test_setup_example.jpg" alt="Bench setup with DUT and linear actuator" width="720">
+  <img src="Images/SmacSampleDelay-1.png" alt="Sampling delay during continuous motion (request/response CAN/LIN)" width="560">
 </p>
 
 ---
 
-## Repository Pointers
+### Problem 2: Low resolution and missed events in incremental tests
+
+Given the problem 1, a good solution would be to **stop the actuator** and only then **request the data via CAN or LIN**, then wait for the response.  
+However, as said before, **incremental testing has limited resolution**. Since the actuator only samples at discrete steps, fast or short events — such as the **snap point** (a sudden change in force when pressing a key) — may occur between two sample points and go undetected.
+
+This is particularly problematic for **short-travel keys**, where the full keypress happens in a very small movement range. In such cases, a small number of samples is not enough to capture the key’s behavior accurately.
+
+---
+
+### Consequence: Forced to use expensive continuous test systems
+
+To solve these problems, test stations often switch to **continuous testing**, which are significantly more expensive
+
+---
+
+## Solution, Main Goals and Requirements
+
+To overcome the limitations of incremental testing and avoid the high cost of commercial continuous testing systems, a new solution is required — one that enables **real-time, synchronized testing** without the complexity and price of traditional DAQ systems.
+
+The **KeyTestBox** is proposed as a **low-cost**, **modular**, and **reusable** platform suitable for production testing environments.
+
+### Main Goals 
+
+- **Real-time acquisition** of:
+  - **Force** (via load cell)
+  - **Position** (via SMAC encoder)
+  - **UUT data** (via CAN or LIN protocols)
+
+### Hardware Requirements
+
+- 24 VDC power supply  
+- CAN interface (supports baud rate up to 1 Mbps)  
+- LIN interface (supports baud rate up to 19 200 bps)  
+- Ethernet port (10/100 Mbps)  
+- Two RS232 interfaces  
+- Minimum of five differential analog inputs (−10 V to +10 V) **(Mainly to read the 2 Load Cells but some extra were added)**  
+- Two linear encoder counters  
+- Microcontroller-based system
+- PCB design
+
+---
+
+### Software Requirements
+
+- Start and stop a test routine upon request  
+- Ability to export the acquired test data  
+- Capability to execute external commands during the test routine  
+- Use of the MQTT (Message Queuing Telemetry Transport) protocol for communication with the host  
+- Firmware developed in C
+
+
+---
+
+## Hardware Overview
+
+<p align="center">
+  <img src="Images/HardwareDesign.png" alt="overviewHardware" width="820">
+</p>
+
+---
+
+## Final Hardware
+
+[Full **Hardware Schematic**](PCB/keytestbox_schematic.pdf)
+
+### Main Components
+
+- STM32F767VIT6
+- LAN8742A
+- MAX1032 (ADC)
+- MCP2021 (LIN)
+- MCP2551 (CAN)
+- MAX232 (RS232 Converter) 
+
+ 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="Images/PCB photo.png" alt="Real PCB Photo" width="300"><br>
+      <em>Real KeytestBox Image</em>
+    </td>
+    <td align="center">
+      <img src="Images/KeytestBox3dModel.png" alt="3D Model of KeyTestBox" width="300"><br>
+      <em>3D model of the KeyTestBox enclosure</em>
+    </td>
+  </tr>
+</table>
+
+
+---
+
+## Software and Tools used
+
+- STM32Cube
+- FreeRTOS
+- LwIP IP Stack
+- Mosquitto MQTT
+- Percepio Tracealyzer
+
+---
+
 
 
