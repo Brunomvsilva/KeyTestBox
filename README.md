@@ -285,15 +285,36 @@ The **KeyTestBox** is proposed as a **low-cost**, **modular**, and **reusable** 
 
 ## Tests and Results
 
-Main tests were done to a lever from the UUT shown below, which is one of the most demanding tests for the following reasons:
-  - Lever has a long travel distance, arround 12 mm, while buttons are only arround 3 mm 
-  - Has **two snap points** per test (2 going forward and 2 going backwards)
-  - Lots of CAN data to receive from UUT 
+The primary test target was a **gear shift lever** from the UUT shown below. This lever represents one of the most challenging components to test due to several factors:
 
-### UUT Lever tested (highlighted in red) and Testbench setup
+- The lever travel is **approximately 12 mm**, much longer than typical pushbuttons (≈ 3 mm).
+- Each test cycle includes **two snap events** in each direction (forward and return).
+- The UUT transmits a **high volume of CAN data** during movement, requiring reliable high-frequency acquisition and synchronization.
+
+### UUT Lever Under Test and Testbench Setup
 
 <p align="center">
-  <img src="Images/Screenshot%20from%202025-11-0804-06-26.png" alt="TB setup" width="800">
+  <img src="Images/TestBench.png" alt="TB setup" width="600">
 </p>
 
-Images below show some result graphs
+The figure highlights the tested lever in red and shows the complete testbench used.
+
+---
+
+### Sampling and Performance
+
+Tests were conducted at various sampling frequencies. The system successfully performed synchronized data acquisition at rates **up to 3000 Hz**, capturing:
+
+- **Force data** via load cell  
+- **Position data** from the SMAC actuator encoder  
+- **Key state data** via CAN from the UUT
+
+This sampling rate proved sufficient for accurate detection of all snap points and detailed force-position profiles.
+
+> Increasing the frequency beyond 3000 Hz was not necessary and led to **excessive data**, which becomes impractical to store locally due to **RAM constraints**.
+
+### Test Result Graph @3000Hz + Lever Position 
+
+### Test Result Graph @1250Hz + Gear Selected
+
+
