@@ -243,7 +243,7 @@ The **KeyTestBox** is proposed as a **low-cost**, **modular**, and **reusable** 
 
 - STM32F767VIT6
 - LAN8742A
-- MAX1032 (ADC)
+- 2x MAX1032 (ADC)
 - MCP2021 (LIN)
 - MCP2551 (CAN)
 - MAX232 (RS232 Converter) 
