@@ -277,6 +277,23 @@ The **KeyTestBox** is proposed as a **low-cost**, **modular**, and **reusable** 
 
 ## MQTT Commands Implemented
 
+<p align="center">
+  <img src="Images/KeyTestBox_Commands_EN.png" alt="MQTT Commands" width="800">
+</p>
 
+---
 
+## Tests and Results
 
+Main tests were done to a lever from the UUT shown below, which is one of the most demanding tests for the following reasons:
+  - Lever has a long travel distance, arround 12 mm, while buttons are only arround 3 mm 
+  - Has **two snap points** per test (2 going forward and 2 going backwards)
+  - Lots of CAN data to receive from UUT 
+
+### UUT Lever tested (highlighted in red) and Testbench setup
+
+<p align="center">
+  <img src="Images/Screenshot%20from%202025-11-0804-06-26.png" alt="TB setup" width="800">
+</p>
+
+Images below show some result graphs
