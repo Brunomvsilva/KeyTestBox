@@ -245,11 +245,12 @@ The **KeyTestBox** is proposed as a **low-cost**, **modular**, and **reusable** 
 
 ### Software Requirements
 
+- Firmware developed in C
 - Start and stop a test routine upon request  
 - Ability to export the acquired test data  
 - Capability to execute external commands during the test routine  
-- Use of the MQTT (Message Queuing Telemetry Transport) protocol for communication with the host  
-- Firmware developed in C
+- Use of the MQTT protocol for communication with the host  
+
 
 
 ---
@@ -344,14 +345,15 @@ This sampling rate proved sufficient for accurate detection of all snap points a
 ### Test Result Graph @3000Hz + Lever Position 
 
 <p align="center">
-  <img src="Images/TestBench.png" alt="TB setup" width="600">
+  <img src="Images/Test3kHz.png" alt="test3khz" width="400">
 </p>
 
 ### Test Result Graph @1250Hz + Gear Selected
 
 <p align="center">
-  <img src="Images/TestBench.png" alt="TB setup" width="600">
+  <img src="Images/Test1250Hz.png" alt="Test1250hz" width="400">
 </p>
+
 
 ---
 
@@ -367,7 +369,7 @@ Furthermore, the tests demonstrated that the KeyTestBox platform is fully capabl
 
 > The **KeyTestBox achieved a cost reduction of approximately 91.75%**, lowering the price about 12 times comparing to the other solution
 
-> One limitation was the available RAM, which is sufficient for most use cases. However, for UUTs that transmit **large volumes of CAN data**, it may be necessary to **select only the relevant signals** to avoid memory overflow.  
+> One limitation was the available RAM, which is sufficient for most use cases. However, for UUTs that transmit **large volumes of CAN data**, it may be necessary to **select only the relevant CAN/LIN UUT data** to avoid memory overflow.  
 >  
 > If full data capture is required, this limitation can easily be addressed by using a **microcontroller with more RAM**, for example STM32H7 family.
 
