@@ -6,6 +6,33 @@
 
 ---
 
+## 📑 Table of Contents
+
+- [Introduction](#introduction)
+- [Typical Key Test Output](#typical-key-test-output)
+- [Incremental vs Continuous Tests](#incremental-vs-continuous-tests)
+  - [Incremental Tests](#incremental-tests)
+  - [Continuous Tests](#continuous-tests)
+- [Problem Statement](#problem-statement)
+  - [Problem 1: Delay via CAN/LIN](#problem-1-delay-when-reading-uut-data-via-can-or-lin)
+  - [Problem 2: Low resolution and missed events](#problem-2-low-resolution-and-missed-events-in-incremental-tests)
+  - [Consequence](#consequence-forced-to-use-expensive-continuous-test-systems)
+- [Solution, Main Goals and Requirements](#solution-main-goals-and-requirements)
+  - [Main Goals](#main-goals)
+  - [Hardware Requirements](#hardware-requirements)
+  - [Software Requirements](#software-requirements)
+- [Hardware Overview](#hardware-overview)
+- [Final Hardware](#final-hardware)
+- [Software and Tools Used](#software-and-tools-used)
+- [MQTT Commands Implemented](#mqtt-commands-implemented)
+- [Tests and Results](#tests-and-results)
+  - [UUT Lever and Testbench Setup](#uut-lever-under-test-and-testbench-setup)
+  - [Sampling and Performance](#sampling-and-performance)
+- [Conclusion](#conclusion)
+- [Skills Learned](#skills-learned)
+
+---
+
 ## Introduction 
 
 Automotive HMI, such as climate and central control panels, rely on high-quality tactile feedback. **Force–displacement** key tests quantify that feel essencially by measuring the relation between **applied force** and **key travel**.
