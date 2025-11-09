@@ -6,7 +6,7 @@
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
 - [Introduction](#introduction)
 - [Typical Key Test Output](#typical-key-test-output)
