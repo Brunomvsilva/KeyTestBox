@@ -262,7 +262,8 @@ The **KeyTestBox** is proposed as a **low-cost**, **modular**, and **reusable** 
   </tr>
 </table>
 
-
+> PCB Schematic done by me in KiCad
+> PCB Layout was designed by another company
 ---
 
 ## Software and Tools used
@@ -315,6 +316,56 @@ This sampling rate proved sufficient for accurate detection of all snap points a
 
 ### Test Result Graph @3000Hz + Lever Position 
 
+<p align="center">
+  <img src="Images/TestBench.png" alt="TB setup" width="600">
+</p>
+
 ### Test Result Graph @1250Hz + Gear Selected
+
+<p align="center">
+  <img src="Images/TestBench.png" alt="TB setup" width="600">
+</p>
+
+---
+
+## Conclusion
+
+All the defined requirements were met.
+Furthermore, the tests demonstrated that the KeyTestBox platform is fully capable of performing continuous key testing with:
+
+- High-resolution data acquisition up to **3000 Hz**
+- Data synchronization
+- Successful operation even on demanding UUT test cases
+
+
+> The **KeyTestBox achieved a cost reduction of approximately 91.75%**, lowering the price about 12 times comparing to the other solution
+
+> One limitation was the available RAM, which is sufficient for most use cases. However, for UUTs that transmit **large volumes of CAN data**, it may be necessary to **select only the relevant signals** to avoid memory overflow.  
+>  
+> If full data capture is required, this limitation can easily be addressed by using a **microcontroller with more RAM**, for example STM32H7 family.
+
+
+---
+
+## Skills Learned
+
+This project provided practical experience in the design and implementation of a **cyber-physical embedded system** for industrial testing applications.
+
+### General Skills
+- **Real-Time Embedded Systems**
+- **Cyber-Physical System Design**  
+- **Signal and Data Acquisition**
+- **Cost–Performance Trade-Offs**
+
+### Technical Skills
+- **Embedded C (STM32)**
+- **FreeRTOS task design**
+- **Peripheral integration** — SPI, UART, ADC, CAN, LIN, Encoders, Timers
+- **Networking with LwIP + MQTT**
+- **PCB schematic design (KiCad)**
+
+
+
+
 
 
