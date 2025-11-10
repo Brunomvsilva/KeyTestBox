@@ -26,7 +26,7 @@
 - [Software and Tools Used](#software-and-tools-used)
 - [MQTT Commands Implemented](#mqtt-commands-implemented)
 - [Tests and Results](#tests-and-results)
-  - [UUT Lever and Testbench Setup](#uut-lever-under-test-and-testbench-setup)
+  - [UUT Lever and Testbench Setup](#uut-lever-test-and-testbench-setup)
   - [Sampling and Performance](#sampling-and-performance)
 - [Conclusion](#conclusion)
 - [Skills Learned](#skills-learned)
