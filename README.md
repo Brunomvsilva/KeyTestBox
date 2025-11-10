@@ -320,7 +320,7 @@ The primary test target was a **gear shift lever** from the UUT shown below. Thi
 - Each test cycle includes **two snap events** in each direction (forward and return).
 - The UUT transmits a **high volume of CAN data** during movement, requiring reliable high-frequency acquisition and synchronization.
 
-### UUT Lever Under Test and Testbench Setup
+### UUT Lever Test and Testbench Setup
 
 <p align="center">
   <img src="Images/TestBench.png" alt="TB setup" width="600">
