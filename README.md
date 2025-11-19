@@ -1,6 +1,6 @@
 # KeytestBox
 
-> A modular embedded platform designed to integrate automotive HMI key-testing systems in production lines.
+> Embedded platform designed to integrate automotive HMI key-testing systems in production lines.
 
 > This project was developed at Preh Portugal as part of my Master’s thesis.
 
