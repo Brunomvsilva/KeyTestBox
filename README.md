@@ -2,7 +2,7 @@
 
 _Embedded platform designed to integrate automotive HMI key-testing systems in production lines._
 
-> This project was developed at Preh Portugal as part of my Master’s thesis.
+_This project was developed at Preh Portugal as part of my Master’s thesis._
 
 ---
 
