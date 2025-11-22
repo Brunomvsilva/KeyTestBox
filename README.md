@@ -6,6 +6,23 @@ _This project was developed at Preh Portugal as part of my Master’s thesis._
 
 ---
 
+## Preview
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="Images/PCB photo.png" alt="Real PCB Photo" width="300"><br>
+      <em>Real KeytestBox Image</em>
+    </td>
+    <td align="center">
+      <img src="Images/KeytestBox3dModel.png" alt="3D Model of KeyTestBox" width="300"><br>
+      <em>3D model of the KeyTestBox enclosure</em>
+    </td>
+  </tr>
+</table>
+
+---
+
 ## Table of Contents
 
 - [Introduction](#introduction)
